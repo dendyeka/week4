@@ -3,8 +3,8 @@ function ubahHuruf(kata) {
     var kamus = 'abcdefghijklmnopqrstuvwxyza';
     var hasil = '';
 
-    for (var i=0; i < kata.length; i++){
-        for (var j=0; j < kamus.length; j++){
+    for (var i = 0; i < kata.length; i++){
+        for (var j = 0; j < kamus.length - 1; j++){
             if (kata[i] === kamus[j]) {
                 hasil += kamus[j+1];
             }

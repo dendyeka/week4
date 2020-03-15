@@ -1,17 +1,26 @@
 function cariModus(arr) {
   // you can only write your code here!
-  var banding = 0;
-  for (var i = 0; i < arr.length; i++) {
-    var tampung = 0;
-    for (var j = 0; j < arr.length; j++)
-//    console.log(i+' - '+j);
-    if (arr[i] == arr[j] && i !== j) {
-      tampung++
-      if (tampung > banding){
-        banding = tampung;
+  var count = 0;
+  var modus;
+  for(var i = 0; i < arr.length; i++){
+    var newCount = 0;
+    for(var j = 0; j < arr.length; j++){
+      if(arr[i] === arr [j] && i !== j){
+        newCount++;
+        if(newCount > count){
+          count = newCount;
+          modus = arr[i];
+        }
       }
     }
   }
+  if(modus === undefined){
+    return -1;
+  } else if(newCount === arr.length-1){
+    return -1;
+  }
+  
+  return modus;
 }
 
 // TEST CASES
