@@ -1,9 +1,3 @@
-var students = [
-{name: 'Alvin Zablan', id: 128, score: -42},
-{name: 'Eliot Bradshaw', id: 32, score: 57},
-{name: 'Tommy Duek', id: 2, score: 99},
-{name: 'Fred Sladkey', id: 256, score: 94}
-];
 function highestScore (students) {  
   // Code disini
   var result={};
