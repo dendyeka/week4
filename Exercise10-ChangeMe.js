@@ -2,7 +2,7 @@ function changeMe(arr) {
   // you can only write your code here!
       var biodata={};
       for (var i=0; i<arr.length ;i++){
-        biodata.fullname = i+1 + "." + " " + arr[i][0] + " " + arr[i][1]
+        biodata.fullname = i+1 + ". " + arr[i][0] + " " + arr[i][1]
         biodata.firstname = arr[i][0];
         biodata.lastname = arr[i][1];
         biodata.gender = arr[i][2];
